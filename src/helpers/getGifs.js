@@ -16,7 +16,6 @@ export const getGifs = async (category) =>{
         url: img.images.original.url
       }
     ))
-  
-    console.log(gifs);
-      return gifs;
-  }
+      
+     return gifs;
+}

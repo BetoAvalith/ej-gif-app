@@ -1,5 +1,6 @@
-import React from 'react'
-import { useState } from 'react'
+import { useState } from 'react';
+
+import PropTypes from 'prop-types';
 
 export const AddCategory = ({ addCategory }) => {
 
@@ -10,6 +11,8 @@ export const AddCategory = ({ addCategory }) => {
     }
 
     const handleSubmit = (e)=>{
+        // Console.log creado para chequear si se dispara el submit en mis test
+        console.log('Hola mundo desde handleSubmit');
         e.preventDefault();
         if(inputValue.trim().length < 1) return;
 
@@ -18,7 +21,7 @@ export const AddCategory = ({ addCategory }) => {
     }
 
   return (
-    <form onSubmit={handleSubmit} >
+    <form onSubmit={handleSubmit} aria-label='form' >
         <input 
             type='text'
             placeholder='Buscar Gif'
@@ -27,4 +30,8 @@ export const AddCategory = ({ addCategory }) => {
         />       
     </form>
   )
+}
+
+AddCategory.propTypes = {
+    addCategory: PropTypes.func.isRequired,
 }
