@@ -40,10 +40,14 @@ __jest.config.js__
 ```
 module.exports = {
     testEnvironment: 'jest-environment-jsdom',
+<<<<<<< HEAD
     setupFiles: ['./jest.setup.js'],
     moduleNameMapper: {
       "\\.(css|scss|less)$": "identity-obj-proxy"
     }
+=======
+    setupFiles: ['./jest.setup.js']
+>>>>>>> bed6cb4293d2d0c9236710bbe543403879d94561
 }
 ```
 

@@ -1,5 +1,4 @@
-import React from 'react'
-import { useState } from 'react'
+import { useState } from 'react';
 
 import PropType from 'prop-types';
 
@@ -12,6 +11,8 @@ export const AddCategory = ({ addCategory }) => {
     }
 
     const handleSubmit = (e)=>{
+        // Console.log creado para chequear si se dispara el submit en mis test
+        console.log('Hola mundo desde handleSubmit');
         e.preventDefault();
         if(inputValue.trim().length < 1) return;
         

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import { AddCategory, GifGrid } from "./components";
 
-// cambio 1
+
 export const GifApp = () => {
 
   const [categories, setCategories] = useState([]);
