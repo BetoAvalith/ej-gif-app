@@ -15,7 +15,7 @@
     font-size: 1.2rem;
     outline: none;
     padding: 10px 15px;
-    width: 100%;
+    width: 80vw;
   }
   
   h1 {
@@ -29,6 +29,31 @@
   h3 {
     font-size: 2rem;
     margin-bottom: 5px;
+  }
+
+  .category-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;    
+  }
+
+  .category-container button {
+    width: 80px;
+    border-radius: 5px;
+    margin-left: 5px;
+  }
+
+  .grid-categories {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .grid-categories button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
   }
   
   .card-grid {
